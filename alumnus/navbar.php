@@ -37,7 +37,7 @@ if ($_SESSION['user_type'] !== 'alumnus') {
                 <a href="alumnushomepage.php">Home</a>
             </li>
             <li class="hover:text-gray-300">
-                <a href="alumni_donation.php">Alumni Donation</a>
+                <a href="donations.php">Alumni Donation</a>
             </li>
             <li class="hover:text-gray-300">
                 <a href="gallery.php">Gallery</a>
@@ -77,7 +77,7 @@ if ($_SESSION['user_type'] !== 'alumnus') {
                 <a href="alumnushomepage.php" class="hover:text-gray-300">Home</a>
             </li>
             <li>
-                <a href="alumni_donation.php" class="hover:text-gray-300">Alumni Donation</a>
+                <a href="donations.php" class="hover:text-gray-300">Alumni Donation</a>
             </li>
             <li>
                 <a href="gallery.php" class="hover:text-gray-300">Gallery</a>
