@@ -36,30 +36,4 @@ function startPayMongoTransaction($amount, $encodedString) {
         echo 'Error: ' . $e->getMessage();
     }
 }
-
-// if (isset($_POST['donateBtn'])) {
-//     $amount = intval($_POST['amount'])*100; //counting in paymongo is in cents thus multiplying it to 100
-//     startPayMongoTransaction(intval($amount), $encodedString);
-// }
 ?>
-
-<!-- <?php if (!$checkout_url): ?>
-    <form method="post">
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" name="amount" required>
-        <button type="submit" name="donateBtn">Donate</button>
-    </form>
-<?php endif; ?>
-
-<?php if ($checkout_url): ?>
-    <iframe class="paymongo-container" src="<?php echo $checkout_url; ?>" title="description"></iframe>
-<?php endif; ?>
-
-<style> 
-.paymongo-container { 
-  display: block;
-  height: 90vh;
-  width: 100vw; 
-  border: none;
-} 
-</style> -->

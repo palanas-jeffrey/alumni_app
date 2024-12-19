@@ -1,6 +1,6 @@
 
 <?php 
-  include "../payment/paymongo/index.php";
+  include "../payment/paymongo/payment-link.php";
 
     if (isset($_POST['donateBtn'])) {
         $amount = intval($_POST['donationAmount'])*100; //counting in paymongo is in cents thus multiplying it to 100
@@ -19,7 +19,6 @@
 
 <body class="bg-gray-50">
 
-    <?php echo $checkout_url ?>
     <?php if (!$checkout_url): ?>
         <div class="max-w-3xl mx-auto mt-10 bg-white p-8 rounded-lg shadow-lg">
             <h1 class="text-2xl font-bold text-center text-blue-700 mb-6">Alumni Donation</h1>
